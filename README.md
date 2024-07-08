@@ -65,5 +65,6 @@ All type definitions are defined under /types. Since the DTOs and models are qui
     - Use save changes to update the content.
     - Use undo and redo to move back and forwards through log changes.
 
-* Note that when selecting an item, it is not very notorious, event they are selected (look at the left panel to see if there are properties enabled) resulting a not very nice user experince, but that's something that can be fixed :)
+* Note that when selecting an item, it is not very noticable even they are selected (look at the left panel to see if there are properties to edit enabled)
+* it is not a nice user experince, but that's something that can be fixed :)
 
