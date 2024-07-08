@@ -70,7 +70,7 @@ const ComponentPanel: React.FC<ComponentPanelProps> = ({ addComponent }) => {
         x: 0,
         y: 0,
         z: 0,
-        width: img.width * 0.5, // reduce image size by half
+        width: img.width * 0.5,
         height: img.height * 0.5,
         visible: true,
       };
@@ -113,10 +113,10 @@ const ComponentPanel: React.FC<ComponentPanelProps> = ({ addComponent }) => {
       if (file.type.startsWith("image")) {
         addImageComponent(file);
       } else if (file.type.startsWith("video")) {
-        addVideoComponent(file); // Call function to add video component
+        addVideoComponent(file);
       }
 
-      setShowFileInput(false); // Hide file input after adding component
+      setShowFileInput(false);
     }
   };
 
