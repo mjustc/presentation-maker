@@ -60,7 +60,6 @@ const EditPage: React.FC = () => {
   const loadPresentation = async (id: string) => {
     try {
       const response = await getPresentationById(id);
-      console.log("response...", response);
       if (response) {
         console.log(response);
         setPresentation(response);
