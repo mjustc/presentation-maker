@@ -1,5 +1,3 @@
-// Home.jsx
-
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -23,7 +21,6 @@ const Home: React.FC = () => {
     try {
       const presentations = await fetchPresentations();
       if (presentations) {
-        console.log(presentations);
         setPresentations(presentations);
       }
     } catch (error) {
