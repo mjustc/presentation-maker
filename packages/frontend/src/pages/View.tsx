@@ -1,5 +1,3 @@
-// ViewPresentation.jsx
-
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getPresentationById } from "../service/presentation";
@@ -12,7 +10,6 @@ const ViewPresentation: React.FC = () => {
   const [presentation, setPresentation] = useState<IPresentation>();
 
   useEffect(() => {
-    console.log("id...", id);
     if (id) {
       loadPresentation(id);
     }
@@ -21,9 +18,7 @@ const ViewPresentation: React.FC = () => {
   const loadPresentation = async (id: string) => {
     try {
       const response = await getPresentationById(id);
-      console.log("response...", response);
       if (response) {
-        console.log(response);
         setPresentation(response);
       }
     } catch (error) {
