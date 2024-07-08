@@ -50,11 +50,6 @@ const Home: React.FC = () => {
 
       if (newPresentation) {
         const updatedPresentations = [...presentations, newPresentation];
-        console.log("updatedPresentations...", updatedPresentations);
-        // updatedPresentations.sort(
-        //   (a, b) => b.updatedAt.getTime() - a.updatedAt.getTime()
-        // ); fix this
-
         setPresentations(updatedPresentations);
       }
     } catch (error) {
