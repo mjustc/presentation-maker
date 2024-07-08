@@ -64,7 +64,6 @@ export const updatePresentation = async (
   id: string,
   presentation: IPresentation
 ) => {
-  console.log("presentation... from", presentation);
   try {
     const response = await fetch(`${API_URL}/presentations/${id}`, {
       method: "PUT",
