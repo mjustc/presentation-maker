@@ -17,8 +17,6 @@ export interface IComponent {
   height: number;
   toggleVisibility?: boolean;
   visible?: boolean;
-  //touchable?: boolean;
-  //hidden?: boolean;
 }
 
 export interface ITextComponent extends IComponent {
