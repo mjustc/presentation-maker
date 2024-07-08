@@ -19,7 +19,7 @@ In this app you will be able to navigate to three pages Home, View and Edit.
 - View :Visualizes a single presentation
 
 ## Backend
-
+```sh
 └── src
     ├── controller  # Contains the logic for handling requests and communicate with under layers like the storage
     │   └── mapper  # Converts plain data into structured objects
@@ -28,13 +28,13 @@ In this app you will be able to navigate to three pages Home, View and Edit.
     ├── routes      # api poitns and routes
     ├── types       # contains TypeScript types and interfaces for the data models
     └── utils       # adds a logger
-
+```
 This backend service is a REST API to create, retrieve, update, or delete presentations and pages. 
 The storage is in-memory but initializes with 3 sample presentations.
 All type definitions are defined under /types. Since the DTOs and models are quite similar, there are no separate definitions to simplify.
 
 ## Frontend
-
+```sh
 ├── public
 └── src
     ├── features        # Contains features of the app, such as editing pages.
@@ -44,7 +44,7 @@ All type definitions are defined under /types. Since the DTOs and models are qui
     ├── service         # Comunnicates with the backend 
     ├── types           # Contains TypeScript types and interface
     └── utils           # helpers to read files
-
+```
 ## Improvements
 
 - The types are the same for both the backend and frontend. Ideally, they should be in a shared package to ensure type safety and consistency
