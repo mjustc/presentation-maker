@@ -16,7 +16,6 @@ const PageContainer: React.FC<PageContainerProps> = (
   const { onSelectedComponent } = props;
 
   const handleSelectComponent = (id: string) => {
-    console.log("Selected component with id:", id);
     const selectedComponent = page.content.find((content) => content.id === id);
     if (selectedComponent) {
       if (onSelectedComponent) {
